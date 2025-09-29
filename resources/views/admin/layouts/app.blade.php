@@ -8,9 +8,12 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body>
+<body class="bg-gray-100 dark:bg-gray-900">
+    @include('layouts.navigation')
     <header> Header default </header>
-    @yield('content')
+    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        @yield('content')
+    </div>
     <footer> Footer</footer>
 </body>
 </html>
